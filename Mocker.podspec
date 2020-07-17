@@ -10,10 +10,12 @@ Pod::Spec.new do |spec|
     'Antoine van der Lee' => 'ajvanderlee@gmail.com',
     'Samuel Beek' => 'ik@samuelbeek.com'
   }
-  spec.source           = { :git => 'https://github.com/WeTransfer/Mocker.git', :tag => spec.version.to_s }
+  spec.source           = { :git => 'https://github.com/MariusDeReus/Mocker.git', :tag => spec.version.to_s }
   spec.social_media_url = 'https://twitter.com/WeTransfer'
 
   spec.ios.deployment_target = '10.0'
+  spec.osx.deployment_target  = '10.15'
+
   spec.source_files = 'Sources/**/*'
   spec.swift_version = '5.1'
 end
